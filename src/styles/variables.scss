@@ -1,0 +1,31 @@
+// Dimensions
+$header-height: 72px;
+$footer-height: 128px;
+$border-width: 2px;
+
+// Palette
+$red: #e43d12;
+$purple: #d6536d;
+$pink: #ffa2b6;
+$yellow: #efb11d;
+$cream: #ebe9e1;
+$black: #14161e;
+
+// Fonts
+$font-main: "REM", sans-serif;
+
+// Global styles
+a {
+  -webkit-transition: color 200ms ease-out;
+  -ms-transition: color 200ms ease-out;
+  transition: color 200ms ease-out;
+}
+a:link {
+  color: $purple;
+}
+a:visited {
+  color: $purple;
+}
+a:hover {
+  color: $pink;
+}

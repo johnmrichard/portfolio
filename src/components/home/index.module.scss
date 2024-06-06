@@ -1,0 +1,146 @@
+@import "../../styles/variables.scss";
+
+.home {
+  min-height: calc(100vh - $header-height - $footer-height);
+
+  background-color: $cream;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 384px;
+
+  padding: 256px 10vw;
+
+  animation: fadeIn ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  @media (max-width: 800px) {
+    padding: 32px;
+    gap: 128px;
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 24px;
+
+  max-width: 50vw;
+
+  font-family: $font-main;
+  font-size: 32px;
+  color: $purple;
+  font-weight: 300;
+
+  @media (max-width: 800px) {
+    text-align: center;
+    max-width: 100vw;
+    font-size: 28px;
+  }
+
+  .paragraph {
+    font-size: 24px;
+  }
+}
+
+.largeText {
+  font-family: $font-main;
+  font-size: 64px;
+  color: $red;
+  font-weight: 800;
+
+  @media (max-width: 800px) {
+    font-size: 48px;
+  }
+}
+
+.title {
+  text-align: center;
+  padding-right: 16px;
+
+  font-family: $font-main;
+  font-size: 64px;
+  color: $red;
+  font-weight: 800;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+  }
+}
+
+.image {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  @media (max-width: 800px) {
+    height: 500px;
+  }
+
+  .imageFront {
+    position: absolute;
+    top: 0;
+    z-index: 16;
+    width: 342px;
+    height: 342px;
+    border-radius: 350px;
+    border: 4px inset $purple;
+
+    @media (max-width: 800px) {
+      top: 157px;
+    }
+  }
+
+  .picture {
+    position: absolute;
+    top: -157px;
+    left: 0;
+    z-index: 20;
+    border-bottom-left-radius: 350px;
+    border-bottom-right-radius: 350px;
+
+    @media (max-width: 800px) {
+      top: 0px;
+    }
+  }
+
+  .imageBack {
+    position: absolute;
+    top: 0;
+    z-index: 14;
+    width: 350px;
+    height: 350px;
+    border-radius: 350px;
+    background-color: $yellow;
+    overflow: hidden;
+
+    @media (max-width: 800px) {
+      top: 157px;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    background-color: $cream;
+  }
+  100% {
+    opacity: 1;
+    background-color: $cream;
+  }
+}

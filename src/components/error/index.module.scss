@@ -1,0 +1,7 @@
+@import "../../styles/variables.scss";
+
+.error {
+  min-height: calc(100vh - $header-height - $footer-height);
+  color: $black;
+  background-color: $cream;
+}

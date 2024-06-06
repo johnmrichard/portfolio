@@ -1,0 +1,24 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Head -->
+    <circle cx="100" cy="100" r="50" stroke="black" stroke-width="2" fill="none"/>
+
+    <!-- Hair -->
+    <path d="M60,80 C40,100 60,130 80,130 C100,130 120,100 140,130 C160,160 140,180 100,180 C60,180 40,160 60,130 C80,100 60,80 60,80" stroke="black" stroke-width="2" fill="none"/>
+
+    <!-- Beard -->
+    <path d="M70,120 C75,140 125,140 130,120" stroke="black" stroke-width="2" fill="none"/>
+
+    <!-- Hat -->
+    <path d="M50,70 C75,50 125,50 150,70" stroke="black" stroke-width="2" fill="none"/>
+    <path d="M60,70 L140,70 L130,90 L70,90 Z" stroke="black" stroke-width="2" fill="none"/>
+
+    <!-- Eyes -->
+    <circle cx="80" cy="90" r="5" stroke="black" stroke-width="2" fill="none"/>
+    <circle cx="120" cy="90" r="5" stroke="black" stroke-width="2" fill="none"/>
+
+    <!-- Nose -->
+    <path d="M100,90 L100,110" stroke="black" stroke-width="2" fill="none"/>
+
+    <!-- Mouth -->
+    <path d="M85,130 Q100,145 115,130" stroke="black" stroke-width="2" fill="none"/>
+</svg>

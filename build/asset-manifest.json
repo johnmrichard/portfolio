@@ -1,34 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.80ce7caa.chunk.css",
-    "main.js": "/static/js/main.82f9b8c4.chunk.js",
-    "main.js.map": "/static/js/main.82f9b8c4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.bf9f4589.js",
-    "runtime-main.js.map": "/static/js/runtime-main.bf9f4589.js.map",
-    "static/js/2.5a3ff74d.chunk.js": "/static/js/2.5a3ff74d.chunk.js",
-    "static/js/2.5a3ff74d.chunk.js.map": "/static/js/2.5a3ff74d.chunk.js.map",
+    "main.css": "/static/css/main.6627011d.css",
+    "main.js": "/static/js/main.29c81d18.js",
+    "static/media/pogo-rogue-banner.png": "/static/media/pogo-rogue-banner.00b680d8584c0de82ce7.png",
+    "static/media/fido.jpg": "/static/media/fido.23f789bfdd9146e5bb11.jpg",
+    "static/media/pogo-rogue.jpg": "/static/media/pogo-rogue.850a37930f0891b1e81f.jpg",
+    "static/media/headshot.png": "/static/media/headshot.835780511227414b36e2.png",
+    "static/media/ohgj-banner.png": "/static/media/ohgj-banner.70c0988cee2e134e3c87.png",
+    "static/media/wormwood-banner.png": "/static/media/wormwood-banner.344ca12298fb42d98d99.png",
+    "static/media/blindside-banner.png": "/static/media/blindside-banner.2885ec5001dc47770551.png",
+    "static/media/fido-banner.jpg": "/static/media/fido-banner.41b40c274ea9c4c2a2ca.jpg",
     "index.html": "/index.html",
-    "precache-manifest.c0a5dcc3332c606f3c03cbdd2b00a2f9.js": "/precache-manifest.c0a5dcc3332c606f3c03cbdd2b00a2f9.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.80ce7caa.chunk.css.map": "/static/css/main.80ce7caa.chunk.css.map",
-    "static/js/2.5a3ff74d.chunk.js.LICENSE.txt": "/static/js/2.5a3ff74d.chunk.js.LICENSE.txt",
-    "static/media/style.scss": "/static/media/illustration-section-02.63d0555d.svg",
-    "static/media/feature-tile-icon-01.svg": "/static/media/feature-tile-icon-01.0f9928d7.svg",
-    "static/media/feature-tile-icon-02.svg": "/static/media/feature-tile-icon-02.bd39f304.svg",
-    "static/media/feature-tile-icon-03.svg": "/static/media/feature-tile-icon-03.66f37ba5.svg",
-    "static/media/feature-tile-icon-04.svg": "/static/media/feature-tile-icon-04.836acd10.svg",
-    "static/media/feature-tile-icon-05.svg": "/static/media/feature-tile-icon-05.fa9ba00b.svg",
-    "static/media/feature-tile-icon-06.svg": "/static/media/feature-tile-icon-06.6a177696.svg",
-    "static/media/features-split-image-01.png": "/static/media/features-split-image-01.d9cb99ce.png",
-    "static/media/features-split-image-02.png": "/static/media/features-split-image-02.3c569239.png",
-    "static/media/features-split-image-03.png": "/static/media/features-split-image-03.87e4d053.png",
-    "static/media/logo.svg": "/static/media/logo.2810a88b.svg",
-    "static/media/video-placeholder.jpg": "/static/media/video-placeholder.a622fc5d.jpg"
+    "main.6627011d.css.map": "/static/css/main.6627011d.css.map",
+    "main.29c81d18.js.map": "/static/js/main.29c81d18.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.bf9f4589.js",
-    "static/js/2.5a3ff74d.chunk.js",
-    "static/css/main.80ce7caa.chunk.css",
-    "static/js/main.82f9b8c4.chunk.js"
+    "static/css/main.6627011d.css",
+    "static/js/main.29c81d18.js"
   ]
 }
