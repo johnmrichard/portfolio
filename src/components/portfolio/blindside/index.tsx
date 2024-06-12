@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import styles from "./index.module.scss";
-import { Page } from "../../../models/enums";
 
 const Blindside: FC = () => (
   <div className={styles.blindside}>
