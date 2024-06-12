@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6627011d.css",
-    "main.js": "/static/js/main.29c81d18.js",
+    "main.js": "/static/js/main.20f07ce7.js",
     "static/media/pogo-rogue-banner.png": "/static/media/pogo-rogue-banner.00b680d8584c0de82ce7.png",
     "static/media/fido.jpg": "/static/media/fido.23f789bfdd9146e5bb11.jpg",
     "static/media/pogo-rogue.jpg": "/static/media/pogo-rogue.850a37930f0891b1e81f.jpg",
@@ -12,10 +12,10 @@
     "static/media/fido-banner.jpg": "/static/media/fido-banner.41b40c274ea9c4c2a2ca.jpg",
     "index.html": "/index.html",
     "main.6627011d.css.map": "/static/css/main.6627011d.css.map",
-    "main.29c81d18.js.map": "/static/js/main.29c81d18.js.map"
+    "main.20f07ce7.js.map": "/static/js/main.20f07ce7.js.map"
   },
   "entrypoints": [
     "static/css/main.6627011d.css",
-    "static/js/main.29c81d18.js"
+    "static/js/main.20f07ce7.js"
   ]
 }

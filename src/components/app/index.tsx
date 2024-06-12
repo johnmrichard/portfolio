@@ -28,42 +28,6 @@ const App = () => {
     if (page === Page.Error) return <Error setPage={setPage} />;
   };
 
-  // const router = createBrowserRouter([
-  //   {
-  //     path: "/",
-  //     element: <Home />,
-  //     errorElement: <Error />,
-  //   },
-  //   {
-  //     path: "/portfolio",
-  //     element: <Portfolio />,
-  //   },
-  //   {
-  //     path: "/portfolio/pogo-rogue",
-  //     element: <PogoRogue />,
-  //   },
-  //   {
-  //     path: "/portfolio/fido",
-  //     element: <Fido />,
-  //   },
-  //   {
-  //     path: "/portfolio/blindside",
-  //     element: <Blindside />,
-  //   },
-  //   {
-  //     path: "/portfolio/ohgj-entries",
-  //     element: <OhgjEntries />,
-  //   },
-  //   {
-  //     path: "/portfolio/wormwood",
-  //     element: <Wormwood />,
-  //   },
-  //   {
-  //     path: "/resume",
-  //     element: <Resume />,
-  //   },
-  // ]);
-
   return (
     <div className={styles.app}>
       <Header setPage={setPage} />
