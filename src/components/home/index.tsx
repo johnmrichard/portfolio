@@ -1,8 +1,13 @@
 import React, { FC } from "react";
 import styles from "./index.module.scss";
 import headshot from "../../assets/headshot.png";
+import { Page } from "../../models/enums";
 
-const Home: FC = () => (
+interface Props {
+  setPage: (page: Page) => void;
+}
+
+const Home: FC<Props> = ({ setPage }) => (
   <div className={styles.home}>
     <div className={styles.content}>
       <div className={styles.section}>

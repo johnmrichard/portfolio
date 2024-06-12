@@ -1,28 +1,24 @@
 import React, { FC } from "react";
 import styles from "./index.module.scss";
 import { mailtoLink } from "../../text/copy.ts";
+import { Page } from "../../models/enums.ts";
 
-const Header: FC = () => (
+interface Props {
+  setPage: (page: Page) => void;
+}
+
+const Header: FC<Props> = ({ setPage }) => (
   <div className={styles.header}>
     <div className={styles.buttonGroup}>
-      <div
-        className={styles.pageLink}
-        onClick={() => (window.location.href = "/")}
-      >
+      <div className={styles.pageLink} onClick={() => setPage(Page.Home)}>
         HOME
       </div>
     </div>
     <div className={styles.buttonGroup}>
-      <div
-        className={styles.pageLink}
-        onClick={() => (window.location.href = "/portfolio")}
-      >
+      <div className={styles.pageLink} onClick={() => setPage(Page.Portfolio)}>
         PORTFOLIO
       </div>
-      <div
-        className={styles.pageLink}
-        onClick={() => (window.location.href = "/resume")}
-      >
+      <div className={styles.pageLink} onClick={() => setPage(Page.Resume)}>
         RESUME
       </div>
       <div

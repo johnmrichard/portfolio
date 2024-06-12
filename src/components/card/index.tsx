@@ -5,11 +5,11 @@ interface Props {
   title: string;
   description: string;
   image: any;
-  route: string;
+  onClick: () => void;
 }
 
-const Card: FC<Props> = ({ title, description, image, route }) => (
-  <div className={styles.card} onClick={() => (window.location.href = route)}>
+const Card: FC<Props> = ({ title, description, image, onClick }) => (
+  <div className={styles.card} onClick={onClick}>
     <img src={image} width="256" height="144" alt="Card" />
     <div className={styles.title}>{title}</div>
     <div className={styles.description}>{description}</div>

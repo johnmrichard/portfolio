@@ -3,8 +3,13 @@ import styles from "./index.module.scss";
 import UofULogo from "../../assets/uofu-logo.png";
 import PogoRogue from "../../assets/pogo-rogue.jpg";
 import Fido from "../../assets/fido.jpg";
+import { Page } from "../../models/enums.ts";
 
-const Resume: FC = () => {
+interface Props {
+  setPage: (page: Page) => void;
+}
+
+const Resume: FC<Props> = ({ setPage }) => {
   const skills = [
     { name: "GameMaker", rating: 9 },
     { name: "Javascript", rating: 9 },
@@ -62,14 +67,6 @@ const Resume: FC = () => {
                 >
                   Steam Page
                 </a>{" "}
-                or view my{" "}
-                <a
-                  href="https://johnrichard.me/portfolio"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Portfolio
-                </a>{" "}
                 to learn more.
               </span>
               <img
@@ -90,8 +87,8 @@ const Resume: FC = () => {
                   rel="noreferrer"
                 >
                   Steam Page
-                </a>
-                .
+                </a>{" "}
+                to learn more.
               </span>
               <img src={Fido} alt="Fido Screenshot" width="384" height="216" />
             </div>

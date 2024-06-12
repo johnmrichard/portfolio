@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import styles from "./index.module.scss";
+import { Page } from "../../../models/enums";
 
 const OhgjEntries: FC = () => (
   <div className={styles.ohgjEntries}>

@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./index.module.scss";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Header from "../header/index.tsx";
 import Home from "../home/index.tsx";
 import Footer from "../footer/index.tsx";
@@ -12,48 +11,63 @@ import Fido from "../portfolio/fido/index.tsx";
 import Blindside from "../portfolio/blindside/index.tsx";
 import OhgjEntries from "../portfolio/ohgjEntries/index.tsx";
 import Wormwood from "../portfolio/wormwood/index.tsx";
+import { Page } from "../../models/enums.ts";
 
 const App = () => {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home />,
-      errorElement: <Error />,
-    },
-    {
-      path: "/portfolio",
-      element: <Portfolio />,
-    },
-    {
-      path: "/portfolio/pogo-rogue",
-      element: <PogoRogue />,
-    },
-    {
-      path: "/portfolio/fido",
-      element: <Fido />,
-    },
-    {
-      path: "/portfolio/blindside",
-      element: <Blindside />,
-    },
-    {
-      path: "/portfolio/ohgj-entries",
-      element: <OhgjEntries />,
-    },
-    {
-      path: "/portfolio/wormwood",
-      element: <Wormwood />,
-    },
-    {
-      path: "/resume",
-      element: <Resume />,
-    },
-  ]);
+  const [page, setPage] = useState<Page>(Page.Home);
+
+  const renderPage = () => {
+    if (page === Page.Home) return <Home setPage={setPage} />;
+    if (page === Page.Resume) return <Resume setPage={setPage} />;
+    if (page === Page.Portfolio) return <Portfolio setPage={setPage} />;
+    if (page === Page.PogoRogue) return <PogoRogue />;
+    if (page === Page.Blindside) return <Blindside />;
+    if (page === Page.OhgjEntries) return <OhgjEntries />;
+    if (page === Page.Fido) return <Fido />;
+    if (page === Page.Wormwood) return <Wormwood />;
+    if (page === Page.Error) return <Error setPage={setPage} />;
+  };
+
+  // const router = createBrowserRouter([
+  //   {
+  //     path: "/",
+  //     element: <Home />,
+  //     errorElement: <Error />,
+  //   },
+  //   {
+  //     path: "/portfolio",
+  //     element: <Portfolio />,
+  //   },
+  //   {
+  //     path: "/portfolio/pogo-rogue",
+  //     element: <PogoRogue />,
+  //   },
+  //   {
+  //     path: "/portfolio/fido",
+  //     element: <Fido />,
+  //   },
+  //   {
+  //     path: "/portfolio/blindside",
+  //     element: <Blindside />,
+  //   },
+  //   {
+  //     path: "/portfolio/ohgj-entries",
+  //     element: <OhgjEntries />,
+  //   },
+  //   {
+  //     path: "/portfolio/wormwood",
+  //     element: <Wormwood />,
+  //   },
+  //   {
+  //     path: "/resume",
+  //     element: <Resume />,
+  //   },
+  // ]);
 
   return (
     <div className={styles.app}>
-      <Header />
-      <RouterProvider router={router} />
+      <Header setPage={setPage} />
+      {renderPage()}
       <Footer />
     </div>
   );
