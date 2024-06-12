@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "John's Portfolio",
+  "name": "John Richard's Resume and Portfolio",
+  "version": "0.0.1",
   "icons": [
     {
       "src": "favicon.ico",
