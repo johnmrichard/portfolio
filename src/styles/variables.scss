@@ -29,3 +29,28 @@ a:visited {
 a:hover {
   color: $pink;
 }
+
+.text {
+  -webkit-mask-image: url("../assets/grit.png");
+  mask-image: url("../assets/grit.png");
+}
+
+.longText {
+  -webkit-mask-image: url("../assets/grit.png");
+  mask-image: url("../assets/grit.png");
+}
+
+.title {
+  -webkit-mask-image: url("../assets/grit.png");
+  mask-image: url("../assets/grit.png");
+}
+
+.button {
+  -webkit-mask-image: url("../assets/grit.png");
+  mask-image: url("../assets/grit.png");
+}
+
+.pageLink {
+  -webkit-mask-image: url("../assets/grit.png");
+  mask-image: url("../assets/grit.png");
+}

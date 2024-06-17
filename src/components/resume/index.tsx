@@ -40,35 +40,39 @@ const Resume: FC<Props> = ({ setPage }) => {
         </div>
         <div>
           <div className={styles.title}>EDUCATION</div>
-          <div className={styles.text}>
-            <span>
-              I received a{" "}
-              <b>BS in Computer Science with an Emphasis in Games</b> from the
-              University of Utah in 2024. I finished with a <b>3.72 GPA</b> and
-              was added to the <b>Dean's List</b> every semester for my
-              outstanding academic conduct.
-            </span>
+          <div className={styles.row}>
+            <div className={styles.text}>
+              <span>
+                I received a{" "}
+                <b>BS in Computer Science with an Emphasis in Games</b> from the
+                University of Utah in 2024. I finished with a <b>3.72 GPA</b>{" "}
+                and was added to the <b>Dean's List</b> every semester for my
+                outstanding academic conduct.
+              </span>
+            </div>
             <img src={UofULogo} alt="U of U Logo" width="158.5" height="200" />
           </div>
         </div>
         <div>
           <div className={styles.title}>PUBLICATIONS</div>
           <div className={styles.list}>
-            <div className={styles.text}>
-              <span>
-                <b>Pogo Rogue</b> is a 2D, Roguelike, Platformer where you
-                control a toy robot on a pogo stick. Me and 23 other students
-                founded Bounce Back Games LLC. and published this game as our
-                Capstone project. Check out the game's{" "}
-                <a
-                  href="https://store.steampowered.com/app/2870280/Pogo_Rogue/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Steam Page
-                </a>{" "}
-                to learn more.
-              </span>
+            <div className={styles.row}>
+              <div className={styles.text}>
+                <span>
+                  <b>Pogo Rogue</b> is a 2D, Roguelike, Platformer where you
+                  control a toy robot on a pogo stick. Me and 23 other students
+                  founded Bounce Back Games LLC. and published this game as our
+                  Capstone project. Check out the game's{" "}
+                  <a
+                    href="https://store.steampowered.com/app/2870280/Pogo_Rogue/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Steam Page
+                  </a>{" "}
+                  to learn more.
+                </span>
+              </div>
               <img
                 src={PogoRogue}
                 alt="Pogo Rogue Screenshot"
@@ -76,20 +80,22 @@ const Resume: FC<Props> = ({ setPage }) => {
                 height="216"
               />
             </div>
-            <div className={styles.text}>
-              <span>
-                <b>FIDO</b> is a 3D, Horror adventure game where, during a
-                dogsitting job gone wrong, you need to translate ancient runes
-                to combat a demonic canine entity. Check out the game's{" "}
-                <a
-                  href="https://store.steampowered.com/app/1946330/FIDO/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Steam Page
-                </a>{" "}
-                to learn more.
-              </span>
+            <div className={styles.row}>
+              <div className={styles.text}>
+                <span>
+                  <b>FIDO</b> is a 3D, Horror adventure game where, during a
+                  dogsitting job gone wrong, you need to translate ancient runes
+                  to combat a demonic canine entity. Check out the game's{" "}
+                  <a
+                    href="https://store.steampowered.com/app/1946330/FIDO/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Steam Page
+                  </a>{" "}
+                  to learn more.
+                </span>
+              </div>
               <img src={Fido} alt="Fido Screenshot" width="384" height="216" />
             </div>
           </div>

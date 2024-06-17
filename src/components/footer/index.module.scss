@@ -8,7 +8,8 @@
   width: 100%;
   height: calc($footer-height - $border-width);
   background-color: $cream;
-  border-top: $border-width solid #00000010;
+  background-image: url("../../assets/grit-alpha.png");
+  box-shadow: 0px 10px 10px 10px grey;
 
   font-family: $font-main;
   font-size: 18px;
@@ -23,7 +24,7 @@
   gap: 4px;
 }
 
-.contactRow {
+.text {
   display: flex;
   gap: 24px;
 }

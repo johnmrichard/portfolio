@@ -5,8 +5,9 @@
   justify-content: space-between;
   width: 100%;
   height: calc($header-height - $border-width);
+  background-image: url("../../assets/grit-alpha.png");
   background-color: $cream;
-  border-bottom: $border-width solid #00000010;
+  box-shadow: 0px -10px 10px 10px grey;
 
   font-family: $font-main;
   font-size: 18px;

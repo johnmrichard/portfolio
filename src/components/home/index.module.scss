@@ -2,8 +2,7 @@
 
 .home {
   min-height: calc(100vh - $header-height - $footer-height);
-
-  background-color: $cream;
+  background-image: url("../../assets/grit-alpha.png");
 }
 
 .content {
@@ -84,6 +83,7 @@
 }
 
 .image {
+  overflow: visible;
   width: 350px;
   height: 350px;
   position: relative;
@@ -92,6 +92,8 @@
   }
 
   .imageFront {
+    -webkit-mask-image: url("../../assets/grit.png");
+    mask-image: url("../../assets/grit.png");
     position: absolute;
     top: 0;
     z-index: 16;
@@ -106,6 +108,8 @@
   }
 
   .picture {
+    -webkit-mask-image: url("../../assets/grit.png");
+    mask-image: url("../../assets/grit.png");
     position: absolute;
     top: -157px;
     left: 0;
@@ -119,6 +123,8 @@
   }
 
   .imageBack {
+    -webkit-mask-image: url("../../assets/grit.png");
+    mask-image: url("../../assets/grit.png");
     position: absolute;
     top: 0;
     z-index: 14;
@@ -137,10 +143,8 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    background-color: $cream;
   }
   100% {
     opacity: 1;
-    background-color: $cream;
   }
 }

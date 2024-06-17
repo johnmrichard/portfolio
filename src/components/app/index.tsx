@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./index.module.scss";
 import Header from "../header/index.tsx";
 import Home from "../home/index.tsx";
@@ -17,7 +17,7 @@ const App = () => {
   const [page, setPage] = useState<Page>(Page.Home);
 
   const renderPage = () => {
-    if (page === Page.Home) return <Home setPage={setPage} />;
+    if (page === Page.Home) return <Home />;
     if (page === Page.Resume) return <Resume setPage={setPage} />;
     if (page === Page.Portfolio) return <Portfolio setPage={setPage} />;
     if (page === Page.PogoRogue) return <PogoRogue />;

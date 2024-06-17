@@ -3,7 +3,7 @@
 .portfolio {
   min-height: calc(100vh - $header-height - $footer-height);
   color: $black;
-  background-color: $cream;
+  background-image: url("../../assets/grit-alpha.png");
 }
 
 .content {
@@ -166,10 +166,8 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    background-color: $cream;
   }
   100% {
     opacity: 1;
-    background-color: $cream;
   }
 }
