@@ -2,6 +2,55 @@
 
 .error {
   min-height: calc(100vh - $header-height - $footer-height);
-  color: $black;
-  background-color: $cream;
+  background-image: url("../../assets/grit-alpha.png");
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+
+  padding: 256px 10vw;
+
+  animation: fadeIn ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  @media (max-width: 800px) {
+    padding: 32px;
+  }
+}
+
+.title {
+  font-family: $font-main;
+  font-size: 128px;
+  color: $red;
+  font-weight: 800;
+  text-align: center;
+}
+
+.text {
+  font-family: $font-main;
+  font-size: 32px;
+  color: $purple;
+  font-weight: 300;
+  text-align: center;
+}
+
+.pageLink {
+  font-family: $font-main;
+  font-size: 32px;
+  color: $purple;
+  font-weight: 300;
+  text-align: center;
+
+  -webkit-transition: color 200ms ease-out;
+  -ms-transition: color 200ms ease-out;
+  transition: color 200ms ease-out;
+
+  &:hover {
+    cursor: pointer;
+    color: $pink;
+  }
 }

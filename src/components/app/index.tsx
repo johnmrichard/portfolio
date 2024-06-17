@@ -49,7 +49,7 @@ const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      errorElement: <Error />,
+      errorElement: <Error setPage={setPage} />,
       children: [
         {
           path: "/",
@@ -85,7 +85,7 @@ const App = () => {
         },
         {
           path: "/404",
-          element: <Error />,
+          element: <Error setPage={setPage} />,
         },
       ],
     },
