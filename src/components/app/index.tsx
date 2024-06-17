@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./index.module.scss";
 import Header from "../header/index.tsx";
 import Home from "../home/index.tsx";
