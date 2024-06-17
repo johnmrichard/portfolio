@@ -1,0 +1,11 @@
+# Redirects from what the browser requests to what we serve
+
+/home /
+/resume /resume
+/portfolio /portfolio
+/portfolio/pogo-rogue /portfolio/pogo-rogue
+/portfolio/blindside /portfolio/blindside
+/portfolio/ohgj-entries /portfolio/ohgj-entries
+/portfolio/wormwood /portfolio/wormwood
+/portfolio/fido /portfolio/fido
+/ /error 404
