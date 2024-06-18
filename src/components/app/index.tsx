@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./index.module.scss";
 import Header from "../header/index.tsx";
 import Home from "../home/index.tsx";
@@ -15,6 +15,13 @@ import { Page } from "../../models/enums.ts";
 
 const App = () => {
   const [page, setPage] = useState<Page>(Page.Home);
+  const topRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (topRef.current !== null) {
+      topRef.current.scrollIntoView();
+    }
+  }, [page]);
 
   const renderPage = () => {
     if (page === Page.Home) return <Home />;
@@ -30,6 +37,7 @@ const App = () => {
 
   return (
     <div className={styles.app}>
+      <div ref={topRef} />
       <Header setPage={setPage} />
       {renderPage()}
       <Footer />
