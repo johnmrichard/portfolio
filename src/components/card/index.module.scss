@@ -12,7 +12,7 @@
   padding: 16px;
   border-radius: 16px;
   box-shadow: 2px 2px 16px -4px $black;
-  background-color: $cream;
+  background-color: $accent;
   background-image: url("../../assets/grit-alpha.png");
 
   -webkit-transition: box-shadow 200ms ease-out;
@@ -34,14 +34,14 @@
 
   img {
     border-radius: 16px;
-    border: 2px solid $red;
+    border: 2px solid $text-main;
   }
 }
 
 .title {
   font-family: $font-main;
   font-size: 32px;
-  color: $red;
+  color: $text-main;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -49,6 +49,6 @@
 .description {
   font-family: $font-main;
   font-size: 16px;
-  color: $purple;
+  color: $text-secondary;
   font-weight: 300;
 }

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import styles from "./index.module.scss";
-import headshot from "../../assets/headshot.png";
+import headshot from "../../assets/headshot-circle.png";
 
 const Home: FC = () => (
   <div className={styles.home}>
@@ -16,16 +16,7 @@ const Home: FC = () => (
             <b> BS in Computer Science</b>.
           </div>
         </div>
-        <div className={styles.image}>
-          <div className={styles.imageBack} />
-          <img
-            className={styles.picture}
-            src={headshot}
-            alt="Headshot"
-            width="350"
-          />
-          <div className={styles.imageFront} />
-        </div>
+        <img className={styles.headshot} src={headshot} alt="Headshot" />
       </div>
       <div className={styles.section}>
         <div className={styles.title}>LETS WORK TOGETHER</div>

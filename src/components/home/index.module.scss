@@ -33,7 +33,7 @@
 
   font-family: $font-main;
   font-size: 32px;
-  color: $purple;
+  color: $text-secondary;
   font-weight: 300;
 
   @media (max-width: 800px) {
@@ -50,7 +50,7 @@
 .largeText {
   font-family: $font-main;
   font-size: 64px;
-  color: $red;
+  color: $text-main;
   font-weight: 800;
 
   @media (max-width: 800px) {
@@ -64,7 +64,7 @@
 
   font-family: $font-main;
   font-size: 64px;
-  color: $red;
+  color: $text-main;
   font-weight: 800;
 }
 
@@ -82,61 +82,12 @@
   }
 }
 
-.image {
-  overflow: visible;
-  width: 350px;
-  height: 350px;
-  position: relative;
+.headshot {
+  width: 35%;
+  padding-left: 16px;
+
   @media (max-width: 800px) {
-    height: 500px;
-  }
-
-  .imageFront {
-    -webkit-mask-image: url("../../assets/grit.png");
-    mask-image: url("../../assets/grit.png");
-    position: absolute;
-    top: 0;
-    z-index: 16;
-    width: 342px;
-    height: 342px;
-    border-radius: 350px;
-    border: 4px inset $purple;
-
-    @media (max-width: 800px) {
-      top: 157px;
-    }
-  }
-
-  .picture {
-    -webkit-mask-image: url("../../assets/grit.png");
-    mask-image: url("../../assets/grit.png");
-    position: absolute;
-    top: -157px;
-    left: 0;
-    z-index: 20;
-    border-bottom-left-radius: 350px;
-    border-bottom-right-radius: 350px;
-
-    @media (max-width: 800px) {
-      top: 0px;
-    }
-  }
-
-  .imageBack {
-    -webkit-mask-image: url("../../assets/grit.png");
-    mask-image: url("../../assets/grit.png");
-    position: absolute;
-    top: 0;
-    z-index: 14;
-    width: 350px;
-    height: 350px;
-    border-radius: 350px;
-    background-color: $yellow;
-    overflow: hidden;
-
-    @media (max-width: 800px) {
-      top: 157px;
-    }
+    width: 90%;
   }
 }
 

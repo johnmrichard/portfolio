@@ -47,7 +47,7 @@
 
   font-family: $font-main;
   font-size: 48px;
-  color: $red;
+  color: $text-main;
   font-weight: 800;
   text-transform: uppercase;
 
@@ -69,7 +69,7 @@
 
   font-family: $font-main;
   font-size: 32px;
-  color: $purple;
+  color: $text-secondary;
   font-weight: 300;
 
   @media (max-width: 1300px) {
@@ -95,7 +95,7 @@
 
   font-family: $font-main;
   font-size: 24px;
-  color: $purple;
+  color: $text-secondary;
   font-weight: 300;
 
   @media (max-width: 800px) {

@@ -4,12 +4,52 @@ $footer-height: 128px;
 $border-width: 2px;
 
 // Palette
-$red: #e43d12;
-$purple: #d6536d;
-$pink: #ffa2b6;
-$yellow: #efb11d;
-$cream: #ebe9e1;
+$text-main: #e43d12;
+$text-secondary: #d6536d;
+$text-secondary-highlight: #ffa2b6;
+$accent: #efb11d;
+$background-main: #ebe9e1;
 $black: #14161e;
+
+// Alt Palette 1
+// $text-main: #6e2a0e;
+// $text-secondary: #0d4a0e;
+// $text-secondary-highlight: #447b3c;
+// $accent: #87736b;
+// $background-main: #bda79e;
+// $black: #14161e;
+
+// Alt Palette 2
+// $text-main: #fe8a01;
+// $text-secondary: #e4e4e4;
+// $text-secondary-highlight: #e4e4e4;
+// $accent: #403734;
+// $background-main: #38322f;
+// $black: #111111;
+
+// Alt Palette 3
+// $text-main: #8e8d8a;
+// $text-secondary: #e85a4f;
+// $text-secondary-highlight: #e98074;
+// $accent: #d8c3a5;
+// $background-main: #eae7dc;
+// $black: #14161e;
+
+// Alt Palette 4
+// $text-main: #e07a5f;
+// $text-secondary: #f4f1de;
+// $text-secondary-highlight: #f2cc8f;
+// $accent: #81b29a;
+// $background-main: #3d405b;
+// $black: #14161e;
+
+// Alt Palette 5
+// $text-main: #e76f51;
+// $text-secondary: #e9c46a;
+// $text-secondary-highlight: #f4a261;
+// $accent: #2a9d8f;
+// $background-main: #264653;
+// $black: #14161e;
 
 // Fonts
 $font-main: "REM", sans-serif;
@@ -21,13 +61,13 @@ a {
   transition: color 200ms ease-out;
 }
 a:link {
-  color: $purple;
+  color: $text-secondary;
 }
 a:visited {
-  color: $purple;
+  color: $text-secondary;
 }
 a:hover {
-  color: $pink;
+  color: $text-secondary-highlight;
 }
 
 .text {
