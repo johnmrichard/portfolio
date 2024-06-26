@@ -83,12 +83,13 @@
 }
 
 .headshot {
+  object-fit: cover;
   width: 35%;
   padding-left: 16px;
 
   @media (max-width: 800px) {
     padding-left: 0px;
-    width: 90%;
+    width: 100%;
   }
 }
 
