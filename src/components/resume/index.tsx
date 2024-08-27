@@ -106,7 +106,7 @@ const Resume: FC<Props> = ({ setPage }) => {
           <div className={styles.list}>
             <div className={styles.text}>
               <span>
-                As a <b>Software Engineer Intern</b> at <b>Domo, Inc</b>., I
+                As a <b>Associate Software Engineer</b> at <b>Domo, Inc</b>., I
                 engineered and maintained a variety of highly customized web
                 applications for many of our corporate clients. I participated
                 in sprint planning meetings and drove iterative software
