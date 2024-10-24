@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import styles from "./index.module.scss";
-import headshot from "../../assets/headshot-circle.png";
+import headshot from "../../assets/dithered-headshot-circle.png";
 
 const Home: FC = () => (
   <div className={styles.home}>
